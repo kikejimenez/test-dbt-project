@@ -1,12 +1,139 @@
 version: 2
 
 models:
-  - name: stg_example
-    description: "Example staging model"
+  - name: stg_neighborhoods
+    description: Staged neighborhood data with renamed columns
     columns:
-      - name: id
-        description: "Primary key"
-      - name: message
-        description: "Example message"
-      - name: created_at
-        description: "Timestamp when record was created"
+      - name: neighborhood_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: neighborhood_name
+        description: Name of the neighborhood
+
+  - name: stg_property_types
+    description: Staged property type lookup data
+    columns:
+      - name: property_type_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: property_type_name
+        description: Type of property (single_family, condo, etc.)
+
+  - name: stg_features
+    description: Staged property features lookup data
+    columns:
+      - name: feature_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: feature_name
+        description: Name of the feature/amenity
+      - name: feature_category
+        description: Category of feature (climate, interior, exterior, etc.)
+
+  - name: stg_listing_statuses
+    description: Staged listing status lookup data
+    columns:
+      - name: status_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: status_name
+        description: Listing status (active, pending, sold, etc.)
+
+  - name: stg_offices
+    description: Staged real estate office data
+    columns:
+      - name: office_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: office_name
+        description: Name of the brokerage office
+
+  - name: stg_agents
+    description: Staged real estate agent data
+    columns:
+      - name: agent_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: office_id
+        description: Foreign key to offices
+        tests:
+          - relationships:
+              to: ref('stg_offices')
+              field: office_id
+      - name: agent_full_name
+        description: Full name of the agent
+
+  - name: stg_customers
+    description: Staged customer (buyer/seller) data
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: customer_type
+        description: Type of customer (buyer, seller, both)
+        tests:
+          - accepted_values:
+              values: ['buyer', 'seller', 'both']
+
+  - name: stg_properties
+    description: Staged property listing data
+    columns:
+      - name: property_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: list_price
+        description: Current listing price
+        tests:
+          - not_null
+
+  - name: stg_property_features
+    description: Staged property-feature junction table
+    columns:
+      - name: property_feature_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_transactions
+    description: Staged sales transaction data
+    columns:
+      - name: transaction_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: sale_price
+        description: Final sale price
+        tests:
+          - not_null
+
+  - name: stg_price_history
+    description: Staged price change history
+    columns:
+      - name: price_history_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: change_type
+        description: Type of price change
+        tests:
+          - accepted_values:
+              values: ['initial', 'increase', 'decrease']

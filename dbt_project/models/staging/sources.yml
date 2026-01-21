@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: Raw real estate data in 3NF format
+    tables:
+      - name: neighborhoods
+        description: Geographic neighborhoods with demographic data
+      - name: property_types
+        description: Property type lookup table
+      - name: features
+        description: Property features/amenities lookup table
+      - name: listing_statuses
+        description: Listing status lookup table
+      - name: offices
+        description: Real estate brokerage offices
+      - name: agents
+        description: Real estate agents
+      - name: customers
+        description: Buyers and sellers
+      - name: properties
+        description: Property listings
+      - name: property_features
+        description: Property to features junction table
+      - name: transactions
+        description: Completed sales transactions
+      - name: price_history
+        description: Property price change history

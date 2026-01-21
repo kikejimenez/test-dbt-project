@@ -1,0 +1,130 @@
+version: 2
+
+models:
+  # Dimensions
+  - name: dim_properties
+    description: Denormalized property dimension with all attributes
+    columns:
+      - name: property_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: property_address
+        description: Full street address
+      - name: neighborhood_name
+        description: Neighborhood where property is located
+      - name: property_type_name
+        description: Type of property
+      - name: listing_status
+        description: Current listing status
+      - name: list_price
+        description: Current list price
+      - name: price_per_sqft
+        description: Calculated price per square foot
+      - name: features_list
+        description: Comma-separated list of property features
+
+  - name: dim_agents
+    description: Agent dimension with office info and performance metrics
+    columns:
+      - name: agent_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: agent_full_name
+        description: Full name of the agent
+      - name: office_name
+        description: Name of the agent's brokerage
+      - name: total_listings
+        description: Total number of listings
+      - name: total_transactions
+        description: Total number of closed transactions
+      - name: total_sales_volume
+        description: Total dollar volume of sales
+
+  - name: dim_customers
+    description: Customer dimension with transaction history
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: customer_full_name
+        description: Full name of the customer
+      - name: customer_segment
+        description: Customer segment based on transaction history
+        tests:
+          - accepted_values:
+              values: ['buyer_only', 'seller_only', 'buyer_and_seller', 'prospect']
+
+  - name: dim_neighborhoods
+    description: Neighborhood dimension with market statistics
+    columns:
+      - name: neighborhood_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: neighborhood_name
+        description: Name of the neighborhood
+      - name: walkability_score
+        description: Walk score (0-100)
+      - name: walkability_category
+        description: Walkability classification
+      - name: avg_list_price
+        description: Average listing price in neighborhood
+
+  # Facts
+  - name: fct_transactions
+    description: Fact table for completed real estate transactions
+    columns:
+      - name: transaction_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: sale_price
+        description: Final sale price
+        tests:
+          - not_null
+      - name: price_change_pct
+        description: Percentage difference from list price
+      - name: sale_vs_asking
+        description: Whether sale was over, under, or at asking price
+      - name: days_to_close
+        description: Days from contract to closing
+
+  - name: fct_listings
+    description: Fact table for property listings with market metrics
+    columns:
+      - name: property_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: list_price
+        description: Current listing price
+      - name: days_on_market
+        description: Days property has been listed
+      - name: market_velocity
+        description: Market speed classification (hot, normal, slow, stale)
+      - name: price_change_count
+        description: Number of price changes
+
+  - name: fct_price_changes
+    description: Fact table for price change events
+    columns:
+      - name: price_history_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: new_price
+        description: Price after change
+      - name: price_change_amount
+        description: Dollar amount of price change
+      - name: price_change_pct
+        description: Percentage change in price

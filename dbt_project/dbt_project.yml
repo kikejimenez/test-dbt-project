@@ -1,4 +1,4 @@
-name: 'my_dbt_project'
+name: 'austin_real_estate'
 version: '1.0.0'
 
 profile: 'my_dbt_project'
@@ -13,3 +13,12 @@ snapshot-paths: ["snapshots"]
 clean-targets:
   - "target"
   - "dbt_packages"
+
+models:
+  austin_real_estate:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
