@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_example
+    description: "Example staging model"
+    columns:
+      - name: id
+        description: "Primary key"
+      - name: message
+        description: "Example message"
+      - name: created_at
+        description: "Timestamp when record was created"

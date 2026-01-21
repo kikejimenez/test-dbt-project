@@ -1,0 +1,15 @@
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+profiles/.user.yml
+
+# Docker
+postgres_data/
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
