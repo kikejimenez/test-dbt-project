@@ -7,13 +7,30 @@
     "vscode": {
       "extensions": [
         "innoverio.vscode-dbt-power-user",
-        "bastienboutonnet.vscode-dbt",
         "ms-python.python",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "anthropics.claude-code"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.associations": {
+          "*.sql": "jinja-sql",
+          "*.yml": "yaml",
+          "*.yaml": "yaml"
+        },
+        "editor.quickSuggestions": {
+          "strings": true
+        },
+        "dbt.dbtPythonPathOverride": "/usr/local/bin/python",
+        "dbt.queryLimit": 500,
+        "dbt.profilesDirOverride": "/root/.dbt",
+        "[jinja-sql]": {
+          "editor.defaultFormatter": "innoverio.vscode-dbt-power-user"
+        },
+        "[sql]": {
+          "editor.defaultFormatter": "innoverio.vscode-dbt-power-user"
+        }
       }
     }
   },
