@@ -49,41 +49,41 @@ INSERT INTO raw.features (name, category) VALUES
 ('Water View', 'view');
 
 INSERT INTO raw.neighborhoods (name, city, state, zip_code, median_income, walkability_score) VALUES
-('Downtown', 'Austin', 'TX', '78701', 85000.00, 92),
-('South Congress', 'Austin', 'TX', '78704', 72000.00, 88),
-('East Austin', 'Austin', 'TX', '78702', 65000.00, 75),
-('Westlake Hills', 'Austin', 'TX', '78746', 195000.00, 45),
-('Mueller', 'Austin', 'TX', '78723', 95000.00, 82),
-('Hyde Park', 'Austin', 'TX', '78751', 78000.00, 85),
-('Tarrytown', 'Austin', 'TX', '78703', 175000.00, 55),
-('Circle C', 'Austin', 'TX', '78749', 125000.00, 35),
-('Domain', 'Austin', 'TX', '78758', 88000.00, 78),
-('Zilker', 'Austin', 'TX', '78704', 110000.00, 72),
-('Barton Hills', 'Austin', 'TX', '78704', 130000.00, 62),
-('Clarksville', 'Austin', 'TX', '78703', 145000.00, 80),
-('Bouldin Creek', 'Austin', 'TX', '78704', 98000.00, 76),
-('Cherrywood', 'Austin', 'TX', '78722', 82000.00, 70),
-('North Loop', 'Austin', 'TX', '78756', 75000.00, 83);
+('Downtown', 'Hermosillo', 'SON', '78701', 85000.00, 92),
+('South Congress', 'Hermosillo', 'SON', '78704', 72000.00, 88),
+('East Hermosillo', 'Hermosillo', 'SON', '78702', 65000.00, 75),
+('Westlake Hills', 'Hermosillo', 'SON', '78746', 195000.00, 45),
+('Mueller', 'Hermosillo', 'SON', '78723', 95000.00, 82),
+('Hyde Park', 'Hermosillo', 'SON', '78751', 78000.00, 85),
+('Tarrytown', 'Hermosillo', 'SON', '78703', 175000.00, 55),
+('Circle C', 'Hermosillo', 'SON', '78749', 125000.00, 35),
+('Domain', 'Hermosillo', 'SON', '78758', 88000.00, 78),
+('Zilker', 'Hermosillo', 'SON', '78704', 110000.00, 72),
+('Barton Hills', 'Hermosillo', 'SON', '78704', 130000.00, 62),
+('Clarksville', 'Hermosillo', 'SON', '78703', 145000.00, 80),
+('Bouldin Creek', 'Hermosillo', 'SON', '78704', 98000.00, 76),
+('Cherrywood', 'Hermosillo', 'SON', '78722', 82000.00, 70),
+('North Loop', 'Hermosillo', 'SON', '78756', 75000.00, 83);
 
 -- =============================================
 -- OFFICES
 -- =============================================
 
 INSERT INTO raw.offices (name, address, city, state, zip_code, phone, email, founded_date, is_active) VALUES
-('Austin Premier Realty', '500 Congress Ave Suite 100', 'Austin', 'TX', '78701', '512-555-0100', 'info@austinpremier.com', '2005-03-15', true),
-('Hill Country Homes', '2100 S Lamar Blvd', 'Austin', 'TX', '78704', '512-555-0200', 'contact@hillcountryhomes.com', '2010-07-22', true),
-('Lone Star Properties', '8500 N MoPac Suite 200', 'Austin', 'TX', '78759', '512-555-0300', 'hello@lonestarprop.com', '2008-11-01', true),
-('Capital City Realtors', '1601 Rio Grande St', 'Austin', 'TX', '78701', '512-555-0400', 'team@capitalcityrealtors.com', '2012-04-18', true),
-('Bluebonnet Real Estate', '4500 Guadalupe St', 'Austin', 'TX', '78751', '512-555-0500', 'info@bluebonnetrealestate.com', '2015-09-30', true);
+('Hermosillo Premier Realty', '500 Congress Ave Suite 100', 'Hermosillo', 'SON', '78701', '512-555-0100', 'info@hermosillopremier.com', '2005-03-15', true),
+('Hill Country Homes', '2100 S Lamar Blvd', 'Hermosillo', 'SON', '78704', '512-555-0200', 'contact@hillcountryhomes.com', '2010-07-22', true),
+('Lone Star Properties', '8500 N MoPac Suite 200', 'Hermosillo', 'SON', '78759', '512-555-0300', 'hello@lonestarprop.com', '2008-11-01', true),
+('Capital City Realtors', '1601 Rio Grande St', 'Hermosillo', 'SON', '78701', '512-555-0400', 'team@capitalcityrealtors.com', '2012-04-18', true),
+('Bluebonnet Real Estate', '4500 Guadalupe St', 'Hermosillo', 'SON', '78751', '512-555-0500', 'info@bluebonnetrealestate.com', '2015-09-30', true);
 
 -- =============================================
 -- AGENTS
 -- =============================================
 
 INSERT INTO raw.agents (office_id, first_name, last_name, email, phone, license_number, license_expiry, hire_date, commission_rate, is_active) VALUES
-(1, 'Sarah', 'Mitchell', 'sarah.mitchell@austinpremier.com', '512-555-1001', 'TX-789456', '2026-12-31', '2018-06-01', 0.0300, true),
-(1, 'James', 'Rodriguez', 'james.rodriguez@austinpremier.com', '512-555-1002', 'TX-789457', '2025-08-15', '2019-03-15', 0.0275, true),
-(1, 'Emily', 'Chen', 'emily.chen@austinpremier.com', '512-555-1003', 'TX-789458', '2026-04-30', '2020-01-10', 0.0250, true),
+(1, 'Sarah', 'Mitchell', 'sarah.mitchell@hermosillopremier.com', '512-555-1001', 'TX-789456', '2026-12-31', '2018-06-01', 0.0300, true),
+(1, 'James', 'Rodriguez', 'james.rodriguez@hermosillopremier.com', '512-555-1002', 'TX-789457', '2025-08-15', '2019-03-15', 0.0275, true),
+(1, 'Emily', 'Chen', 'emily.chen@hermosillopremier.com', '512-555-1003', 'TX-789458', '2026-04-30', '2020-01-10', 0.0250, true),
 (2, 'Michael', 'Thompson', 'michael.t@hillcountryhomes.com', '512-555-2001', 'TX-654321', '2025-11-20', '2017-08-22', 0.0325, true),
 (2, 'Jessica', 'Williams', 'jessica.w@hillcountryhomes.com', '512-555-2002', 'TX-654322', '2026-06-15', '2019-11-05', 0.0300, true),
 (2, 'David', 'Garcia', 'david.g@hillcountryhomes.com', '512-555-2003', 'TX-654323', '2025-09-30', '2021-02-28', 0.0250, true),
@@ -99,57 +99,57 @@ INSERT INTO raw.agents (office_id, first_name, last_name, email, phone, license_
 -- =============================================
 
 INSERT INTO raw.customers (first_name, last_name, email, phone, address, city, state, zip_code, customer_type, preapproval_amount) VALUES
-('John', 'Smith', 'john.smith@email.com', '512-555-8001', '123 Oak Lane', 'Austin', 'TX', '78701', 'buyer', 650000.00),
-('Maria', 'Gonzalez', 'maria.g@email.com', '512-555-8002', '456 Elm Street', 'Austin', 'TX', '78704', 'seller', NULL),
-('William', 'Lee', 'will.lee@email.com', '512-555-8003', '789 Pine Ave', 'Austin', 'TX', '78702', 'both', 850000.00),
-('Jennifer', 'Wilson', 'jen.wilson@email.com', '512-555-8004', '321 Maple Dr', 'Austin', 'TX', '78746', 'buyer', 1200000.00),
-('Daniel', 'Kim', 'daniel.kim@email.com', '512-555-8005', '654 Cedar Blvd', 'Austin', 'TX', '78723', 'seller', NULL),
-('Rachel', 'Moore', 'rachel.m@email.com', '512-555-8006', '987 Birch Way', 'Austin', 'TX', '78751', 'buyer', 550000.00),
-('Thomas', 'Jackson', 'tom.jackson@email.com', '512-555-8007', '147 Spruce Ct', 'Austin', 'TX', '78703', 'seller', NULL),
-('Ashley', 'White', 'ashley.w@email.com', '512-555-8008', '258 Walnut St', 'Austin', 'TX', '78749', 'both', 750000.00),
-('Brian', 'Harris', 'brian.h@email.com', '512-555-8009', '369 Hickory Ln', 'Austin', 'TX', '78758', 'buyer', 480000.00),
-('Stephanie', 'Clark', 'steph.clark@email.com', '512-555-8010', '741 Aspen Rd', 'Austin', 'TX', '78704', 'seller', NULL),
-('Jason', 'Lewis', 'jason.l@email.com', '512-555-8011', '852 Willow Pl', 'Austin', 'TX', '78704', 'buyer', 920000.00),
-('Nicole', 'Walker', 'nicole.w@email.com', '512-555-8012', '963 Poplar Ave', 'Austin', 'TX', '78703', 'seller', NULL),
-('Ryan', 'Hall', 'ryan.hall@email.com', '512-555-8013', '159 Chestnut Dr', 'Austin', 'TX', '78722', 'buyer', 620000.00),
-('Megan', 'Young', 'megan.y@email.com', '512-555-8014', '357 Magnolia Ct', 'Austin', 'TX', '78756', 'both', 700000.00),
-('Andrew', 'King', 'andrew.k@email.com', '512-555-8015', '468 Cypress St', 'Austin', 'TX', '78701', 'buyer', 1500000.00),
-('Samantha', 'Scott', 'sam.scott@email.com', '512-555-8016', '579 Redwood Ln', 'Austin', 'TX', '78746', 'seller', NULL),
-('Eric', 'Green', 'eric.g@email.com', '512-555-8017', '680 Sequoia Blvd', 'Austin', 'TX', '78702', 'buyer', 425000.00),
-('Christina', 'Adams', 'christina.a@email.com', '512-555-8018', '791 Juniper Way', 'Austin', 'TX', '78723', 'seller', NULL),
-('Matthew', 'Nelson', 'matt.n@email.com', '512-555-8019', '802 Sycamore Rd', 'Austin', 'TX', '78751', 'both', 580000.00),
-('Lisa', 'Carter', 'lisa.c@email.com', '512-555-8020', '913 Dogwood Pl', 'Austin', 'TX', '78749', 'buyer', 890000.00);
+('John', 'Smith', 'john.smith@email.com', '512-555-8001', '123 Oak Lane', 'Hermosillo', 'SON', '78701', 'buyer', 650000.00),
+('Maria', 'Gonzalez', 'maria.g@email.com', '512-555-8002', '456 Elm Street', 'Hermosillo', 'SON', '78704', 'seller', NULL),
+('William', 'Lee', 'will.lee@email.com', '512-555-8003', '789 Pine Ave', 'Hermosillo', 'SON', '78702', 'both', 850000.00),
+('Jennifer', 'Wilson', 'jen.wilson@email.com', '512-555-8004', '321 Maple Dr', 'Hermosillo', 'SON', '78746', 'buyer', 1200000.00),
+('Daniel', 'Kim', 'daniel.kim@email.com', '512-555-8005', '654 Cedar Blvd', 'Hermosillo', 'SON', '78723', 'seller', NULL),
+('Rachel', 'Moore', 'rachel.m@email.com', '512-555-8006', '987 Birch Way', 'Hermosillo', 'SON', '78751', 'buyer', 550000.00),
+('Thomas', 'Jackson', 'tom.jackson@email.com', '512-555-8007', '147 Spruce Ct', 'Hermosillo', 'SON', '78703', 'seller', NULL),
+('Ashley', 'White', 'ashley.w@email.com', '512-555-8008', '258 Walnut St', 'Hermosillo', 'SON', '78749', 'both', 750000.00),
+('Brian', 'Harris', 'brian.h@email.com', '512-555-8009', '369 Hickory Ln', 'Hermosillo', 'SON', '78758', 'buyer', 480000.00),
+('Stephanie', 'Clark', 'steph.clark@email.com', '512-555-8010', '741 Aspen Rd', 'Hermosillo', 'SON', '78704', 'seller', NULL),
+('Jason', 'Lewis', 'jason.l@email.com', '512-555-8011', '852 Willow Pl', 'Hermosillo', 'SON', '78704', 'buyer', 920000.00),
+('Nicole', 'Walker', 'nicole.w@email.com', '512-555-8012', '963 Poplar Ave', 'Hermosillo', 'SON', '78703', 'seller', NULL),
+('Ryan', 'Hall', 'ryan.hall@email.com', '512-555-8013', '159 Chestnut Dr', 'Hermosillo', 'SON', '78722', 'buyer', 620000.00),
+('Megan', 'Young', 'megan.y@email.com', '512-555-8014', '357 Magnolia Ct', 'Hermosillo', 'SON', '78756', 'both', 700000.00),
+('Andrew', 'King', 'andrew.k@email.com', '512-555-8015', '468 Cypress St', 'Hermosillo', 'SON', '78701', 'buyer', 1500000.00),
+('Samantha', 'Scott', 'sam.scott@email.com', '512-555-8016', '579 Redwood Ln', 'Hermosillo', 'SON', '78746', 'seller', NULL),
+('Eric', 'Green', 'eric.g@email.com', '512-555-8017', '680 Sequoia Blvd', 'Hermosillo', 'SON', '78702', 'buyer', 425000.00),
+('Christina', 'Adams', 'christina.a@email.com', '512-555-8018', '791 Juniper Way', 'Hermosillo', 'SON', '78723', 'seller', NULL),
+('Matthew', 'Nelson', 'matt.n@email.com', '512-555-8019', '802 Sycamore Rd', 'Hermosillo', 'SON', '78751', 'both', 580000.00),
+('Lisa', 'Carter', 'lisa.c@email.com', '512-555-8020', '913 Dogwood Pl', 'Hermosillo', 'SON', '78749', 'buyer', 890000.00);
 
 -- =============================================
 -- PROPERTIES
 -- =============================================
 
 INSERT INTO raw.properties (neighborhood_id, property_type_id, listing_agent_id, status_id, address, city, state, zip_code, latitude, longitude, year_built, square_feet, lot_size_sqft, bedrooms, bathrooms, garage_spaces, stories, list_price, hoa_monthly, property_tax_annual, description, listing_date, days_on_market) VALUES
-(1, 2, 1, 1, '500 Congress Ave #2401', 'Austin', 'TX', '78701', 30.26680, -97.74310, 2019, 1850, NULL, 2, 2.0, 1, 1, 875000.00, 650.00, 14500.00, 'Stunning downtown condo with panoramic city views. Floor-to-ceiling windows, chef kitchen, luxury finishes throughout.', '2024-11-15', 45),
-(2, 1, 2, 1, '1204 S Congress Ave', 'Austin', 'TX', '78704', 30.24520, -97.74890, 1965, 1650, 7500, 3, 2.0, 1, 1, 725000.00, 0.00, 11200.00, 'Classic SoCo bungalow with modern updates. Original hardwood floors, updated kitchen, large backyard with mature trees.', '2024-10-20', 71),
-(3, 1, 3, 2, '2307 E 9th St', 'Austin', 'TX', '78702', 30.26450, -97.72150, 2021, 2100, 4500, 3, 2.5, 2, 2, 650000.00, 0.00, 10800.00, 'Modern new construction in East Austin. Open concept living, high ceilings, designer finishes, rooftop deck.', '2024-09-10', 111),
-(4, 1, 4, 1, '3701 Westlake Dr', 'Austin', 'TX', '78746', 30.30120, -97.79850, 2015, 4500, 21780, 5, 4.5, 3, 2, 2450000.00, 0.00, 42500.00, 'Exquisite Westlake estate with Lake Austin views. Gourmet kitchen, home theater, infinity pool, wine cellar.', '2024-12-01', 29),
-(5, 3, 5, 1, '4507 Mueller Blvd', 'Austin', 'TX', '78723', 30.29780, -97.70230, 2018, 1920, 2800, 3, 2.5, 2, 3, 585000.00, 125.00, 9800.00, 'Energy-efficient townhome in Mueller. Walkable to shops and restaurants, community pool, modern design.', '2024-11-28', 32),
-(6, 1, 6, 3, '4312 Avenue G', 'Austin', 'TX', '78751', 30.30450, -97.72680, 1948, 1400, 6500, 2, 1.0, 0, 1, 525000.00, 0.00, 8900.00, 'Charming Hyde Park cottage with original character. Updated electrical and plumbing, large lot with development potential.', '2024-07-15', 0),
-(7, 1, 7, 1, '2205 Pecos St', 'Austin', 'TX', '78703', 30.28950, -97.75620, 1952, 2800, 9800, 4, 3.0, 2, 1, 1650000.00, 0.00, 28500.00, 'Tarrytown traditional extensively renovated. Chef kitchen, primary suite addition, pool, guest house.', '2024-10-05', 86),
-(8, 1, 8, 1, '9701 Circle C Ranch Trail', 'Austin', 'TX', '78749', 30.17230, -97.86450, 2008, 3200, 10500, 4, 3.5, 3, 2, 725000.00, 85.00, 12800.00, 'Family-friendly home in Circle C. Open floor plan, game room, covered patio, community amenities.', '2024-11-10', 50),
-(9, 2, 9, 2, '11011 Domain Dr #1505', 'Austin', 'TX', '78758', 30.40120, -97.72350, 2020, 1100, NULL, 1, 1.0, 1, 1, 385000.00, 450.00, 6500.00, 'Modern Domain condo with walkable lifestyle. Quartz counters, wood floors, resort-style amenities.', '2024-10-28', 63),
-(10, 1, 10, 1, '2104 Kinney Ave', 'Austin', 'TX', '78704', 30.25120, -97.76890, 1978, 1800, 7200, 3, 2.0, 1, 1, 895000.00, 0.00, 15200.00, 'Updated Zilker home steps from the park. Vaulted ceilings, sunroom, mature landscaping, Austin stone exterior.', '2024-12-05', 25),
-(11, 1, 11, 1, '2601 Barton Hills Dr', 'Austin', 'TX', '78704', 30.25890, -97.78120, 1972, 2200, 12000, 4, 2.5, 2, 2, 1150000.00, 0.00, 19500.00, 'Barton Hills retreat on greenbelt. Wall of windows, multiple decks, Barton Creek access, mid-century design.', '2024-09-20', 101),
-(12, 3, 12, 3, '1605 W 6th St #A', 'Austin', 'TX', '78703', 30.27230, -97.75890, 2016, 1650, 2200, 2, 2.5, 2, 3, 695000.00, 200.00, 11800.00, 'Clarksville townhome with downtown views. Rooftop terrace, high-end finishes, walk to restaurants and shops.', '2024-06-10', 0),
-(13, 1, 1, 1, '1807 S 3rd St', 'Austin', 'TX', '78704', 30.24780, -97.75120, 2022, 1950, 4800, 3, 2.5, 1, 2, 799000.00, 0.00, 13500.00, 'New construction in Bouldin Creek. Designer finishes, outdoor living, bike to downtown, energy efficient.', '2024-11-01', 59),
-(14, 1, 2, 1, '3507 Cherrywood Rd', 'Austin', 'TX', '78722', 30.29120, -97.71450, 1955, 1550, 8500, 3, 2.0, 1, 1, 625000.00, 0.00, 10500.00, 'Classic Cherrywood home with updates. Screened porch, detached garage/studio, mature trees, great location.', '2024-10-15', 76),
-(15, 2, 3, 2, '5501 N Lamar Blvd #302', 'Austin', 'TX', '78756', 30.32450, -97.73890, 2017, 950, NULL, 1, 1.0, 1, 1, 325000.00, 350.00, 5500.00, 'North Loop condo in walkable location. Modern kitchen, balcony, pool, near coffee shops and restaurants.', '2024-09-25', 96),
-(4, 1, 4, 1, '4205 Cat Mountain Dr', 'Austin', 'TX', '78731', 30.35120, -97.78450, 2010, 3800, 18500, 4, 3.5, 2, 2, 1875000.00, 150.00, 32500.00, 'Hill Country contemporary with city views. Chef kitchen, outdoor kitchen, pool, guest suite, smart home.', '2024-11-22', 38),
-(1, 2, 5, 1, '200 Congress Ave #15B', 'Austin', 'TX', '78701', 30.26450, -97.74520, 2008, 2400, NULL, 3, 3.0, 2, 1, 1250000.00, 850.00, 21500.00, 'Luxury downtown penthouse with wrap-around terrace. Concierge, valet, pool, spa, unobstructed views.', '2024-12-10', 20),
-(3, 4, 6, 1, '1108 E 11th St', 'Austin', 'TX', '78702', 30.26680, -97.72680, 1925, 2800, 6000, 4, 2.0, 0, 2, 550000.00, 0.00, 9200.00, 'East Austin duplex investment opportunity. Both units rented, strong cash flow, appreciating area.', '2024-08-30', 122),
-(6, 1, 7, 3, '702 E 45th St', 'Austin', 'TX', '78751', 30.30780, -97.72120, 1940, 1200, 5800, 2, 1.0, 0, 1, 475000.00, 0.00, 8100.00, 'Adorable Hyde Park bungalow with updates. Original wood floors, clawfoot tub, covered front porch.', '2024-05-20', 0),
-(10, 3, 8, 1, '1600 Barton Springs Rd #5302', 'Austin', 'TX', '78704', 30.26120, -97.75780, 2005, 1400, NULL, 2, 2.0, 1, 1, 495000.00, 475.00, 8500.00, 'Zilker condo with Barton Springs access. Pool, fitness center, concierge, walking distance to downtown.', '2024-11-18', 42),
-(2, 1, 9, 1, '1505 S 2nd St', 'Austin', 'TX', '78704', 30.24890, -97.74780, 1958, 1750, 6800, 3, 2.0, 2, 1, 815000.00, 0.00, 13800.00, 'Renovated South Congress gem. Open kitchen, spa bath, detached office, landscaped yard with patio.', '2024-10-01', 90),
-(5, 3, 10, 1, '4200 Berkman Dr', 'Austin', 'TX', '78723', 30.30120, -97.70580, 2019, 1700, 2400, 3, 2.5, 2, 2, 525000.00, 100.00, 8900.00, 'Mueller area townhome near Thinkery. Modern design, community parks, top-rated schools nearby.', '2024-12-08', 22),
-(7, 1, 11, 2, '3102 Windsor Rd', 'Austin', 'TX', '78703', 30.29450, -97.75890, 1960, 2400, 11000, 4, 2.5, 2, 1, 1425000.00, 0.00, 24500.00, 'Classic Tarrytown ranch on large lot. Pool, updated systems, walking distance to Casis Elementary.', '2024-09-05', 116),
-(8, 1, 12, 1, '8900 Fathom Cir', 'Austin', 'TX', '78749', 30.18450, -97.85120, 2012, 2650, 8500, 4, 3.0, 2, 2, 625000.00, 65.00, 10800.00, 'Circle C family home with upgrades. Granite counters, wood floors, covered patio, community pool.', '2024-11-05', 55),
-(9, 1, 1, 1, '12005 Metric Blvd', 'Austin', 'TX', '78758', 30.41250, -97.71890, 2015, 1600, 5500, 3, 2.0, 2, 1, 425000.00, 0.00, 7200.00, 'Domain area single family with no HOA. Updated kitchen, covered patio, easy access to tech corridor.', '2024-10-25', 66);
+(1, 2, 1, 1, '500 Congress Ave #2401', 'Hermosillo', 'SON', '78701', 30.26680, -97.74310, 2019, 1850, NULL, 2, 2.0, 1, 1, 875000.00, 650.00, 14500.00, 'Stunning downtown condo with panoramic city views. Floor-to-ceiling windows, chef kitchen, luxury finishes throughout.', '2024-11-15', 45),
+(2, 1, 2, 1, '1204 S Congress Ave', 'Hermosillo', 'SON', '78704', 30.24520, -97.74890, 1965, 1650, 7500, 3, 2.0, 1, 1, 725000.00, 0.00, 11200.00, 'Classic SoCo bungalow with modern updates. Original hardwood floors, updated kitchen, large backyard with mature trees.', '2024-10-20', 71),
+(3, 1, 3, 2, '2307 E 9th St', 'Hermosillo', 'SON', '78702', 30.26450, -97.72150, 2021, 2100, 4500, 3, 2.5, 2, 2, 650000.00, 0.00, 10800.00, 'Modern new construction in East Hermosillo. Open concept living, high ceilings, designer finishes, rooftop deck.', '2024-09-10', 111),
+(4, 1, 4, 1, '3701 Westlake Dr', 'Hermosillo', 'SON', '78746', 30.30120, -97.79850, 2015, 4500, 21780, 5, 4.5, 3, 2, 2450000.00, 0.00, 42500.00, 'Exquisite Westlake estate with Lake Hermosillo views. Gourmet kitchen, home theater, infinity pool, wine cellar.', '2024-12-01', 29),
+(5, 3, 5, 1, '4507 Mueller Blvd', 'Hermosillo', 'SON', '78723', 30.29780, -97.70230, 2018, 1920, 2800, 3, 2.5, 2, 3, 585000.00, 125.00, 9800.00, 'Energy-efficient townhome in Mueller. Walkable to shops and restaurants, community pool, modern design.', '2024-11-28', 32),
+(6, 1, 6, 3, '4312 Avenue G', 'Hermosillo', 'SON', '78751', 30.30450, -97.72680, 1948, 1400, 6500, 2, 1.0, 0, 1, 525000.00, 0.00, 8900.00, 'Charming Hyde Park cottage with original character. Updated electrical and plumbing, large lot with development potential.', '2024-07-15', 0),
+(7, 1, 7, 1, '2205 Pecos St', 'Hermosillo', 'SON', '78703', 30.28950, -97.75620, 1952, 2800, 9800, 4, 3.0, 2, 1, 1650000.00, 0.00, 28500.00, 'Tarrytown traditional extensively renovated. Chef kitchen, primary suite addition, pool, guest house.', '2024-10-05', 86),
+(8, 1, 8, 1, '9701 Circle C Ranch Trail', 'Hermosillo', 'SON', '78749', 30.17230, -97.86450, 2008, 3200, 10500, 4, 3.5, 3, 2, 725000.00, 85.00, 12800.00, 'Family-friendly home in Circle C. Open floor plan, game room, covered patio, community amenities.', '2024-11-10', 50),
+(9, 2, 9, 2, '11011 Domain Dr #1505', 'Hermosillo', 'SON', '78758', 30.40120, -97.72350, 2020, 1100, NULL, 1, 1.0, 1, 1, 385000.00, 450.00, 6500.00, 'Modern Domain condo with walkable lifestyle. Quartz counters, wood floors, resort-style amenities.', '2024-10-28', 63),
+(10, 1, 10, 1, '2104 Kinney Ave', 'Hermosillo', 'SON', '78704', 30.25120, -97.76890, 1978, 1800, 7200, 3, 2.0, 1, 1, 895000.00, 0.00, 15200.00, 'Updated Zilker home steps from the park. Vaulted ceilings, sunroom, mature landscaping, stone exterior.', '2024-12-05', 25),
+(11, 1, 11, 1, '2601 Barton Hills Dr', 'Hermosillo', 'SON', '78704', 30.25890, -97.78120, 1972, 2200, 12000, 4, 2.5, 2, 2, 1150000.00, 0.00, 19500.00, 'Barton Hills retreat on greenbelt. Wall of windows, multiple decks, Barton Creek access, mid-century design.', '2024-09-20', 101),
+(12, 3, 12, 3, '1605 W 6th St #A', 'Hermosillo', 'SON', '78703', 30.27230, -97.75890, 2016, 1650, 2200, 2, 2.5, 2, 3, 695000.00, 200.00, 11800.00, 'Clarksville townhome with downtown views. Rooftop terrace, high-end finishes, walk to restaurants and shops.', '2024-06-10', 0),
+(13, 1, 1, 1, '1807 S 3rd St', 'Hermosillo', 'SON', '78704', 30.24780, -97.75120, 2022, 1950, 4800, 3, 2.5, 1, 2, 799000.00, 0.00, 13500.00, 'New construction in Bouldin Creek. Designer finishes, outdoor living, bike to downtown, energy efficient.', '2024-11-01', 59),
+(14, 1, 2, 1, '3507 Cherrywood Rd', 'Hermosillo', 'SON', '78722', 30.29120, -97.71450, 1955, 1550, 8500, 3, 2.0, 1, 1, 625000.00, 0.00, 10500.00, 'Classic Cherrywood home with updates. Screened porch, detached garage/studio, mature trees, great location.', '2024-10-15', 76),
+(15, 2, 3, 2, '5501 N Lamar Blvd #302', 'Hermosillo', 'SON', '78756', 30.32450, -97.73890, 2017, 950, NULL, 1, 1.0, 1, 1, 325000.00, 350.00, 5500.00, 'North Loop condo in walkable location. Modern kitchen, balcony, pool, near coffee shops and restaurants.', '2024-09-25', 96),
+(4, 1, 4, 1, '4205 Cat Mountain Dr', 'Hermosillo', 'SON', '78731', 30.35120, -97.78450, 2010, 3800, 18500, 4, 3.5, 2, 2, 1875000.00, 150.00, 32500.00, 'Hill Country contemporary with city views. Chef kitchen, outdoor kitchen, pool, guest suite, smart home.', '2024-11-22', 38),
+(1, 2, 5, 1, '200 Congress Ave #15B', 'Hermosillo', 'SON', '78701', 30.26450, -97.74520, 2008, 2400, NULL, 3, 3.0, 2, 1, 1250000.00, 850.00, 21500.00, 'Luxury downtown penthouse with wrap-around terrace. Concierge, valet, pool, spa, unobstructed views.', '2024-12-10', 20),
+(3, 4, 6, 1, '1108 E 11th St', 'Hermosillo', 'SON', '78702', 30.26680, -97.72680, 1925, 2800, 6000, 4, 2.0, 0, 2, 550000.00, 0.00, 9200.00, 'East Hermosillo duplex investment opportunity. Both units rented, strong cash flow, appreciating area.', '2024-08-30', 122),
+(6, 1, 7, 3, '702 E 45th St', 'Hermosillo', 'SON', '78751', 30.30780, -97.72120, 1940, 1200, 5800, 2, 1.0, 0, 1, 475000.00, 0.00, 8100.00, 'Adorable Hyde Park bungalow with updates. Original wood floors, clawfoot tub, covered front porch.', '2024-05-20', 0),
+(10, 3, 8, 1, '1600 Barton Springs Rd #5302', 'Hermosillo', 'SON', '78704', 30.26120, -97.75780, 2005, 1400, NULL, 2, 2.0, 1, 1, 495000.00, 475.00, 8500.00, 'Zilker condo with Barton Springs access. Pool, fitness center, concierge, walking distance to downtown.', '2024-11-18', 42),
+(2, 1, 9, 1, '1505 S 2nd St', 'Hermosillo', 'SON', '78704', 30.24890, -97.74780, 1958, 1750, 6800, 3, 2.0, 2, 1, 815000.00, 0.00, 13800.00, 'Renovated South Congress gem. Open kitchen, spa bath, detached office, landscaped yard with patio.', '2024-10-01', 90),
+(5, 3, 10, 1, '4200 Berkman Dr', 'Hermosillo', 'SON', '78723', 30.30120, -97.70580, 2019, 1700, 2400, 3, 2.5, 2, 2, 525000.00, 100.00, 8900.00, 'Mueller area townhome near Thinkery. Modern design, community parks, top-rated schools nearby.', '2024-12-08', 22),
+(7, 1, 11, 2, '3102 Windsor Rd', 'Hermosillo', 'SON', '78703', 30.29450, -97.75890, 1960, 2400, 11000, 4, 2.5, 2, 1, 1425000.00, 0.00, 24500.00, 'Classic Tarrytown ranch on large lot. Pool, updated systems, walking distance to Casis Elementary.', '2024-09-05', 116),
+(8, 1, 12, 1, '8900 Fathom Cir', 'Hermosillo', 'SON', '78749', 30.18450, -97.85120, 2012, 2650, 8500, 4, 3.0, 2, 2, 625000.00, 65.00, 10800.00, 'Circle C family home with upgrades. Granite counters, wood floors, covered patio, community pool.', '2024-11-05', 55),
+(9, 1, 1, 1, '12005 Metric Blvd', 'Hermosillo', 'SON', '78758', 30.41250, -97.71890, 2015, 1600, 5500, 3, 2.0, 2, 1, 425000.00, 0.00, 7200.00, 'Domain area single family with no HOA. Updated kitchen, covered patio, easy access to tech corridor.', '2024-10-25', 66);
 
 -- =============================================
 -- PROPERTY FEATURES (Junction Table)
@@ -163,7 +163,7 @@ INSERT INTO raw.property_features (property_id, feature_id) VALUES
 INSERT INTO raw.property_features (property_id, feature_id) VALUES
 (2, 1), (2, 2), (2, 4), (2, 12), (2, 13), (2, 14);
 
--- Property 3: East Austin Modern
+-- Property 3: East Hermosillo Modern
 INSERT INTO raw.property_features (property_id, feature_id) VALUES
 (3, 1), (3, 2), (3, 6), (3, 7), (3, 8), (3, 13), (3, 16), (3, 19), (3, 23), (3, 24);
 

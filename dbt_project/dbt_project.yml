@@ -1,4 +1,4 @@
-name: 'austin_real_estate'
+name: 'hermosillo_real_estate'
 version: '1.0.0'
 
 profile: 'my_dbt_project'
@@ -15,7 +15,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  austin_real_estate:
+  hermosillo_real_estate:
     staging:
       +materialized: view
       +schema: staging
