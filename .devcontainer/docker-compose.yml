@@ -21,6 +21,7 @@ services:
       context: ..
       dockerfile: Dockerfile
     container_name: dbt_dev
+    entrypoint: ""
     volumes:
       - ../dbt_project:/usr/app
       - ../profiles:/root/.dbt
@@ -30,7 +31,7 @@ services:
         condition: service_healthy
     environment:
       DBT_PROFILES_DIR: /root/.dbt
-    command: sleep infinity
+    command: ["sleep", "infinity"]
 
 volumes:
   postgres_data:
