@@ -1,0 +1,22 @@
+{
+  "name": "dbt Development",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dbt",
+  "workspaceFolder": "/usr/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "innoverio.vscode-dbt-power-user",
+        "bastienboutonnet.vscode-dbt",
+        "ms-python.python",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postStartCommand": "dbt debug",
+  "forwardPorts": [5432]
+}
